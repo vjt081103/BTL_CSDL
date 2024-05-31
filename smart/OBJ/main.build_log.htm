@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Do Quoc Viet, UET, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  E:\Keli\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DARMSTM.DLL V1.69.1.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TARMSTM.DLL V1.67.1.0
+ 
+<h2>Project:</h2>
+E:\New folder (2)\smart\KeilC\RFID_Keypad.uvprojx
+Project File Date:  05/28/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'E:\Keli\ARM\ARM_Compiler_5.06u7\Bin'
+Build target 'STM32F1_RFID'
+compiling main.c...
+..\User\main.c(54): warning:  #1295-D: Deprecated declaration changePassword - give arg types
+  void changePassword();
+..\User\main.c(55): warning:  #1295-D: Deprecated declaration home_open_lcd - give arg types
+  void home_open_lcd();
+..\User\main.c(57): warning:  #1295-D: Deprecated declaration Unlock - give arg types
+  void Unlock();
+..\User\main.c(58): warning:  #1295-D: Deprecated declaration open_door - give arg types
+  void open_door();
+..\User\main.c(447): warning:  #223-D: function "LCD_Write_Chr" declared implicitly
+  			LCD_Write_Chr('*');
+..\User\main.c(467): warning:  #223-D: function "LCD_Write_Chr" declared implicitly
+  					LCD_Write_Chr(key);
+..\User\main.c(509): warning:  #223-D: function "LCD_Write_Chr" declared implicitly
+  					LCD_Write_Chr(key);
+..\User\main.c(435): warning:  #177-D: variable "same"  was declared but never referenced
+  	int same = 1;
+..\User\main.c(576): warning:  #1295-D: Deprecated declaration TIM1_Config - give arg types
+  void TIM1_Config();
+..\User\main.c(652): warning:  #223-D: function "LCD_Write_Chr" declared implicitly
+  				LCD_Write_Chr('*');
+..\User\main.c(590): warning:  #177-D: variable "j"  was declared but never referenced
+  		uint32_t i,j;
+..\User\main.c(594): warning:  #177-D: variable "len"  was declared but never referenced
+  		int len = 0;
+..\User\main.c(595): warning:  #177-D: variable "so"  was declared but never referenced
+  		char so[2];
+..\User\main.c: 13 warnings, 0 errors
+linking...
+Program Size: Code=18408 RO-data=408 RW-data=104 ZI-data=1096  
+FromELF: creating hex file...
+"..\OBJ\main.axf" - 0 Error(s), 13 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_STM32F1_RFID
+  E:/Keli/PACKS/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  E:/Keli/PACKS/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
